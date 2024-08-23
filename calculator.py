@@ -10,6 +10,5 @@ addition = round(num1+num2)
 # division = round(num1/num2,2)
 division = round(num1/num2)
 
-print(f"{addition:,}",'||',num1+num2) # formated with a ,
+print(f"{addition:,}",'||',num1+num2) # formated with ,
 print(f"{division:.2f}",'||',num1/num2)
-
