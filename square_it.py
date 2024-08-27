@@ -7,4 +7,4 @@ def sq(num):
 
 # __name__ is the name of the caller typically main when ran from terminal.
 if __name__ == "__main__":
-    main() 
+    main()
