@@ -34,31 +34,36 @@ class Wizard:
         else:
             self._guild = guild
 # @ are decorators and we use them wrt to getters and setters
+    @classmethod
+    def get_wizard(cls):
+        n1 = input("Name: ")
+        g1 = input("Guild: ")
+        return cls(n1, g1) # returns obj of the used class
 
 # ... is a placeholder for later implementation
 def main():
-    wizard = get_wizard()
+    wizard = Wizard.get_wizard()
     # print(f"{wizard.name}:{wizard.guild}")
     print(wizard)
     # wizard.guild = "ice"
     print(wizard.cast())
 
-def get_wizard():
-#     name = input("Name: ")
-#     guild = input("Guild: ")
-#     return (name, guild) # returning a touple, its immutable
-# # if we return a list return [name, guild] now we can change them later
-    # student = {} # empty dict
-    # student["name"] = input("Name: ")
-    # student["guild"] = input("Guild: ")
+# def get_wizard():
+# #     name = input("Name: ")
+# #     guild = input("Guild: ")
+# #     return (name, guild) # returning a touple, its immutable
+# # # if we return a list return [name, guild] now we can change them later
+#     # student = {} # empty dict
+#     # student["name"] = input("Name: ")
+#     # student["guild"] = input("Guild: ")
 
-    # wizard = Wizard() # created obj of wizard class
-    # wizard.name = input("Name: ")
-    # wizard.guild = input("Guild: ")
-    # other way
-    n1 = input("Name: ")
-    g1 = input("Guild: ")
-    return Wizard(n1, g1)
+#     # wizard = Wizard() # created obj of wizard class
+#     # wizard.name = input("Name: ")
+#     # wizard.guild = input("Guild: ")
+#     # other way
+#     n1 = input("Name: ")
+#     g1 = input("Guild: ")
+#     return Wizard(n1, g1)
 
 if __name__ == "__main__":
     main()
